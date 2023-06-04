@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.style {
+  height: 80vh;
+  width: 50vw;
+  background-color: black;
+  color: white;
+  position: relative;
+}
+
+.notes_header {
+  /* position: fixed; */
+  width: 100%;
+  display: flex;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.notes_header input {
+  height: 40px;
+  width: 200px;
+  border-radius: 10px;
+  outline: 1px solid green;
+  font-size: 16px;
+}
+
+.btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 15px;
+  border: 1px solid whitesmoke;
+  background-color: black;
+}
+.btn:hover {
+  border: none;
+  cursor: pointer;
+}
+
+.add_btn {
+  position: absolute;
+  bottom: 20px;
+  left: 45%;
+}
+
+.notes_container {
+  max-height: 65vh;
+  overflow: hidden;
+  margin: 15px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  z-index: 1;
+  /* padding-right: 10px; */
+}
+
+.notes_container::-webkit-scrollbar {
+  width: 0px;
+}
+
+.note {
+  width: 130px;
+  /* background-color: rgb(17, 215, 215); */
+  color: white;
+  border-radius: 10px;
+  flex-grow: 2;
+  text-decoration: none;
+}
+
+.create_note_header {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.save_btn {
+  background-color: rgb(192, 22, 214);
+  color: white;
+  font-family: "Times New Roman";
+  font-weight: 500;
+  border-radius: 10px;
+  align-items: center;
+  height: 40px;
+  width: 60px;
+}
+
+.create_note_form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  flex-direction: column;
+}
+
+.create_note_form input {
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  height: 60px;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+.create_note_form textarea {
+  max-height: 120px;
+  font-size: 20px;
+  margin: 20px;
+  color: white;
+  background-color: transparent;
+}
