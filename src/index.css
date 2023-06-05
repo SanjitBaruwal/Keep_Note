@@ -37,15 +37,19 @@ code {
 .notes_header input {
   height: 40px;
   width: 200px;
+  border: transparent;
   border-radius: 10px;
-  outline: 1px solid green;
+  outline: 1px solid white;
+  background-color: transparent;
   font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
 }
 
 .btn {
   height: 40px;
   width: 40px;
-  border-radius: 15px;
+  border-radius: 50%;
   border: 1px solid whitesmoke;
   background-color: black;
 }
@@ -61,7 +65,8 @@ code {
 }
 
 .notes_container {
-  max-height: 65vh;
+  max-height: 80vh;
+  border-radius: 10px;
   overflow: hidden;
   margin: 15px;
   overflow-y: scroll;
@@ -69,7 +74,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  z-index: 1;
+  /* z-index: 1; */
   /* padding-right: 10px; */
 }
 
@@ -95,38 +100,93 @@ code {
 }
 
 .save_btn {
+  display: block;
+  padding: 10px;
+  font-size: 16px;
+  text-align: center;
   background-color: rgb(192, 22, 214);
   color: white;
-  font-family: "Times New Roman";
-  font-weight: 500;
+  border: none;
   border-radius: 10px;
-  align-items: center;
-  height: 40px;
-  width: 60px;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .create_note_form {
-  margin-top: 20px;
+  margin: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
+  /* justify-content: center; */
+  align-items: start;
+  /* height: 60vh; */
   flex-direction: column;
 }
 
 .create_note_form input {
-  border-bottom: 2px solid white;
+  border: transparent;
   background-color: transparent;
   height: 60px;
+  width: 98%;
   color: white;
-  text-align: center;
   font-size: 24px;
+  font-family: Roboto;
+  outline: none;
 }
 
 .create_note_form textarea {
-  max-height: 120px;
+  min-width: 98%;
   font-size: 20px;
-  margin: 20px;
+  margin-top: 20px;
   color: white;
   background-color: transparent;
+  border: transparent;
+  outline: none;
+  resize: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .style {
+    width: 90vw;
+    height: 95vh;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .style {
+    width: 70vw;
+    height: 95vh;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .style {
+    width: 60vw;
+    height: 90vh;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .style {
+    width: 55vw;
+    height: 85vh;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .style {
+    width: 50vw;
+    height: 85vh;
+  }
+}
+
+.empty {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-45%, -50%);
 }

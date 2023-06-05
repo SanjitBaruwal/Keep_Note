@@ -37,7 +37,7 @@ const Notes = ({ notes }) => {
               handelSearch();
             }}
             autoFocus
-            placeholder="Keyword..."
+            placeholder="Search by title..."
           />
         )}
         <button
@@ -48,13 +48,13 @@ const Notes = ({ notes }) => {
             <FontAwesomeIcon
               icon={faXmark}
               beat
-              style={{ color: "#00bd1f", fontSize: "24px" }}
+              style={{ color: "#fff", fontSize: "24px" }}
             />
           ) : (
             <FontAwesomeIcon
               icon={faMagnifyingGlass}
               beatFade
-              style={{ color: "#00bd1f", fontSize: "24px" }}
+              style={{ color: "#fff", fontSize: "24px" }}
             />
           )}
         </button>

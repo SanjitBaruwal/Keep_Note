@@ -40,8 +40,7 @@ const CreateNote = ({ setNotes }) => {
       <form className="create_note_form" onSubmit={handelSubmit}>
         <input
           type="text"
-          placeholder="title"
-          autoFocus
+          placeholder="Title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
